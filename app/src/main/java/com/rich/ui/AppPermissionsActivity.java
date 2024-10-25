@@ -27,8 +27,6 @@ public class AppPermissionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         try {
             setContentView(R.layout.activity_app_permissions);
-            Toast.makeText(this, "开始加载", Toast.LENGTH_SHORT).show();
-
             ListView permissionsListView = findViewById(R.id.permissions_list_view);
 
             // 获取传递的包名
@@ -36,9 +34,7 @@ public class AppPermissionsActivity extends AppCompatActivity {
 
             // 获取应用的权限列表
             PackageManager packageManager = getPackageManager();
-            Toast.makeText(this, "获取权限前", Toast.LENGTH_SHORT).show();
             PackageInfo packageInfo = packageManager.getPackageInfo(packageName, PackageManager.GET_PERMISSIONS);
-            Toast.makeText(this, "获取权限后", Toast.LENGTH_SHORT).show();
             String[] requestedPermissions = packageInfo.requestedPermissions;
 
             // 将权限添加到列表及其状态

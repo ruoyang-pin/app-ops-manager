@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">app-ops-manager</string>
+    <string name="app_name">App Ops Manager</string>
+    <string name="accessibility_service_description">监控跳转服务</string>
 </resources>

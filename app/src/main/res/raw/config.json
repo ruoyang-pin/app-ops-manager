@@ -1,0 +1,12 @@
+{
+    "apps": [
+        {
+            "packageName": "com.douban.frodo",
+            "viewId": "com.douban.frodo:id/_ad_image_",
+            "coordinates": {
+                "x": 1286,
+                "y": 131
+            }
+        }
+    ]
+}
