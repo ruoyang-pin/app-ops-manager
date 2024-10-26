@@ -14,6 +14,8 @@ public class ConfigBean {
 
     private String viewId;
 
+    private String viewText;
+
     private PixelCoordinates location;
 
     @Data

@@ -46,6 +46,7 @@ public class ParseConfigFile {
                 ConfigBean configBean = new ConfigBean();
                 configBean.setPackageName(jsonObject.optString("packageName"));
                 configBean.setViewId(jsonObject.optString("viewId"));
+                configBean.setViewText(jsonObject.optString("viewText"));
                 ConfigBean.PixelCoordinates pixelCoordinates = new ConfigBean.PixelCoordinates();
                 JSONObject coordinates = jsonObject.getJSONObject("coordinates");
                 pixelCoordinates.setX(coordinates.optInt("x"));
